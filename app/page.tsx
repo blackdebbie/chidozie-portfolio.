@@ -3,19 +3,19 @@ const experience = [
     date: "Oct 2023 to Mar 2026",
     role: "B2B SaaS AI Product Designer",
     company: "Hypertek | NFE Web3 Marketplace (Remote)",
-    copy: "Led UX research for the NFE marketplace, mapping user journeys for creators and collectors. Designed the end-to-end marketplace flow for buying, selling, and minting digital experiences. Built a scalable design system that improved development speed and visual consistency. Designed creator dashboards, admin tools, fee management panels, and analytics pages. Conducted usability tests and translated insights into clear design improvements.",
+    copy: "Led UX research for the NFE marketplace, mapping user journeys for creators and collectors. Designed the end to end marketplace flow for buying, selling, and minting digital experiences. Built a scalable design system that improved development speed and visual consistency. Designed creator dashboards, admin tools, fee management panels, and analytics pages. Conducted usability tests and translated insights into clear design improvements.",
   },
   {
     date: "Oct 2025",
     role: "B2B SaaS AI Product Designer",
     company: "Privacy VPN | Marketing Website & Landing Page",
-    copy: "Designed a modern, trust-driven landing page for a secure VPN service. Translated complex VPN and security concepts into simple, user-friendly content sections. Created a clean dark theme with green accents to visually communicate security and trust. Designed responsive layouts and interactive prototypes for usability validation across devices.",
+    copy: "Designed a modern, trust driven landing page for a secure VPN service. Translated complex VPN and security concepts into simple, user friendly content sections. Created a clean dark theme with green accents to visually communicate security and trust. Designed responsive layouts and interactive prototypes for usability validation across devices.",
   },
   {
     date: "Nov 2025",
     role: "Product Designer",
     company: "VOTEK | Solar Energy Platform",
-    copy: "Led end-to-end design for a digital platform helping homeowners and businesses explore solar energy. Designed interactive savings calculators, real installation stories, and a guided step-by-step flow. Delivered core features including Instant Savings Calculator, Certified Installer Network, and Flexible Payment Plans. Built responsive, accessible interfaces with high-fidelity prototypes optimised for desktop and mobile.",
+    copy: "Led end to end design for a digital platform helping homeowners and businesses explore solar energy. Designed interactive savings calculators, real installation stories, and a guided step by step flow. Delivered core features including Instant Savings Calculator, Certified Installer Network, and Flexible Payment Plans. Built responsive, accessible interfaces with high fidelity prototypes optimised for desktop and mobile.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="portraitWrap">
           <img
             className="portrait"
-            src="/portrait.jpeg"
+            src="/media/image/WhatsApp%20Image%202026-03-05%20at%201.16.03%20AM.jpeg"
             alt="Chidozie Deborah"
           />
         </div>
@@ -99,9 +99,9 @@ export default function Home() {
           <h2>Turning ideas into visual stories.</h2>
           <div className="aboutCopy">
             <p>I&apos;m Chidozie Deborah, a B2B SaaS AI Product Designer with a passion for crafting digital experiences that are both beautiful and functional. I believe great design is invisible it just works.</p>
-            <p>From leading UX research for Web3 marketplaces to designing trust-driven landing pages and solar energy platforms, I bring strategic thinking and pixel-perfect execution to every project.</p>
+            <p>From leading UX research for Web3 marketplaces to designing trust driven landing pages and solar energy platforms, I bring strategic thinking and pixel perfect execution to every project.</p>
             <div className="skillRow">
-              {['Figma', 'UI Design', 'UX Research', 'Prototyping', 'Wireframing', 'Design Systems', 'Design Thinking', 'Usability Testing', 'Responsive Design', 'HTML', 'CSS'].map((skill) => <span key={skill}>{skill}</span>)}
+              {['Figma', 'UI Design', 'UX Research', 'Prototyping', 'Wireframing', 'Design Systems', 'Design Thinking', 'Usability Testing', 'Responsive Design'].map((skill) => <span key={skill}>{skill}</span>)}
             </div>
           </div>
         </div>
