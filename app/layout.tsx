@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import { headers } from "next/headers";
+import "./globals.css";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const requestHeaders = await headers();
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
+  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
+  const origin = `${protocol}://${host}`;
+  const title = "Chidozie Deborah | B2B SaaS AI Product Designer";
+  const description = "B2B SaaS AI Product Designer creating intuitive interfaces, scalable design systems, and human-centered digital products.";
+
+  return {
+    title,
+    description,
+    icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+    openGraph: { title, description, images: [{ url: `${origin}/og-bw.jpg`, width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image", title, description, images: [`${origin}/og-bw.jpg`] },
+  };
+}
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
