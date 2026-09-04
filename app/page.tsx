@@ -51,6 +51,7 @@ export default function Home() {
       <nav className="nav shell" aria-label="Main navigation">
         <a className="monogram" href="#top" aria-label="Deborah home">Deborah.</a>
         <div className="navLinks">
+          <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#clients">Clients</a>
@@ -68,7 +69,7 @@ export default function Home() {
         <div className="portraitWrap">
           <img
             className="portrait"
-            src="/media/image/WhatsApp%20Image%202026-03-05%20at%201.16.03%20AM.jpeg"
+            src="/deploy-assets/portrait.webp"
             alt="Chidozie Deborah"
           />
         </div>
@@ -93,8 +94,60 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="work shell" id="work">
+        <div className="sectionHeader workHeader">
+          <div className="sectionNumber">01 / Selected work</div>
+          <h2>Case studies.</h2>
+          <p>Selected product work showing how I turn research, content, and complex journeys into clear digital experiences.</p>
+        </div>
+        <div className="projectStack">
+        <a className="projectCard" href="/mass2miami" aria-label="View the Mass2Miami website redesign case study">
+          <div className="projectEditorial">
+            <div className="projectTopline">
+              <p>Mass2Miami</p>
+              <span>01 / 2026</span>
+            </div>
+            <h3>Building stronger communities through clearer communication.</h3>
+            <div className="projectTags" aria-label="Project disciplines">
+              <span>Social Impact</span><span>UX Research</span><span>UI Design</span><span>Web</span>
+            </div>
+            <div className="projectOutcomes" aria-label="Project outcomes">
+              <span><b>5</b>Key screens</span>
+              <span><b>4</b>Service paths</span>
+              <span><b>1</b>Clearer journey</span>
+            </div>
+            <span className="projectCta">View Case Study <i aria-hidden="true">↗</i></span>
+          </div>
+          <div className="projectVisual">
+            <img src="/deploy-assets/mass2miami-card-mockup.webp" alt="Mass2Miami website shown on a laptop mockup" />
+          </div>
+        </a>
+        <a className="projectCard validateProjectCard" href="/validate-ai" aria-label="View the Validate AI product design case study">
+          <div className="projectEditorial">
+            <div className="projectTopline">
+              <p>Validate AI</p>
+              <span>02 / AI product</span>
+            </div>
+            <h3>Designing trust between users and AI.</h3>
+            <div className="projectTags" aria-label="Project disciplines">
+              <span>AI UX</span><span>Product Strategy</span><span>Design Systems</span><span>SaaS</span>
+            </div>
+            <div className="projectOutcomes" aria-label="Project scope">
+              <span><b>8</b>Core screens</span>
+              <span><b>5</b>Workflow stages</span>
+              <span><b>1</b>Trust model</span>
+            </div>
+            <span className="projectCta">View Case Study <i aria-hidden="true">↗</i></span>
+          </div>
+          <div className="projectVisual validateProjectVisual">
+            <img src="/deploy-assets/validate-ai-card.webp" alt="Validate AI website shown on a laptop between sculptural rocks" />
+          </div>
+        </a>
+        </div>
+      </section>
+
       <section className="about shell" id="about">
-        <div className="sectionNumber">01 / About</div>
+        <div className="sectionNumber">02 / About</div>
         <div className="aboutBody">
           <h2>Turning ideas into visual stories.</h2>
           <div className="aboutCopy">
@@ -108,7 +161,7 @@ export default function Home() {
       </section>
 
       <section className="experience shell" id="experience">
-        <div className="sectionNumber">02 / Experience</div>
+        <div className="sectionNumber">03 / Experience</div>
         <div className="experienceBody">
           <h2>Work history.</h2>
           <div className="timeline">
@@ -128,7 +181,7 @@ export default function Home() {
 
       <section className="testimonials shell" id="clients">
         <div className="sectionHeader clientHeader">
-          <div className="sectionNumber">03 / Client feedback</div>
+          <div className="sectionNumber">04 / Client feedback</div>
           <h2>What clients say.</h2>
           <p>5.0 Upwork rating · 100% Job Success · Top Rated</p>
         </div>
